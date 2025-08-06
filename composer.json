@@ -1,0 +1,49 @@
+{
+    "name": "enjoy-software/laravel-hits",
+    "description": "Hit model for recording visitor information and tracking page views on various models",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^12.0",
+        "illuminate/database": "^12.0",
+        "illuminate/http": "^12.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0",
+        "orchestra/testbench": "^10.0",
+        "laravel/pint": "^1.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "EnjoySoftware\\LaravelHits\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "EnjoySoftware\\LaravelHits\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EnjoySoftware\\LaravelHits\\LaravelHitsServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Enjoy Software",
+            "email": "veryenjoysoftware@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "scripts": {
+        "lint": [
+            "@php vendor/bin/pint --ansi"
+        ],
+        "test": [
+            "@php vendor/bin/phpunit"
+        ]
+    }
+}
