@@ -9,7 +9,7 @@
 **`--days`** - 指定保留天數
 
 ```bash
-# 清理 365 天前的記錄（預設值）
+# 清理 0 天前的記錄，也就是全部記錄（預設值）
 php artisan laravel-hits:cleanup
 
 # 清理 30 天前的記錄

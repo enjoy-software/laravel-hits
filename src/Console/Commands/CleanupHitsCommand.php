@@ -12,7 +12,7 @@ class CleanupHitsCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'laravel-hits:cleanup {--days=365 : Number of days to keep}';
+    protected $signature = 'laravel-hits:cleanup {--days=0 : Number of days to keep}';
 
     /**
      * The console command description.
@@ -28,8 +28,8 @@ class CleanupHitsCommand extends Command
     {
         $days = $this->option('days');
 
-        if (!is_numeric($days) || $days < 1) {
-            $this->error('Days must be a positive number.');
+        if (!is_numeric($days) || $days < 0) {
+            $this->error('Days must be a non-negative number.');
 
             return;
         }
