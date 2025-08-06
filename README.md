@@ -23,7 +23,7 @@ MIT License
 
 ## 貢獻
 
-歡迎提交 PR 或回報 Issue！
+歡迎提交 PR 或回報 issues！
 
 ## 支援
 
