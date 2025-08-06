@@ -1,7 +1,21 @@
 {
     "name": "enjoy-software/laravel-hits",
     "description": "Hit model for recording visitor information and tracking page views on various models",
+    "keywords": ["laravel", "hits", "analytics", "page-views", "visitor-tracking", "statistics"],
+    "homepage": "https://github.com/enjoy-software/laravel-hits",
     "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Enjoy Software",
+            "email": "veryenjoysoftware@gmail.com",
+            "homepage": "https://github.com/enjoy-software"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/enjoy-software/laravel-hits/issues",
+        "source": "https://github.com/enjoy-software/laravel-hits"
+    },
     "require": {
         "php": "^8.1",
         "illuminate/support": "^12.0",
@@ -13,7 +27,6 @@
         "orchestra/testbench": "^10.0",
         "laravel/pint": "^1.0"
     },
-    "license": "MIT",
     "autoload": {
         "psr-4": {
             "EnjoySoftware\\LaravelHits\\": "src/"
@@ -31,12 +44,6 @@
             ]
         }
     },
-    "authors": [
-        {
-            "name": "Enjoy Software",
-            "email": "veryenjoysoftware@gmail.com"
-        }
-    ],
     "minimum-stability": "stable",
     "scripts": {
         "lint": [
