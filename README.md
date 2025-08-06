@@ -13,9 +13,9 @@
 
 ## 📚 文檔
 
-- [安裝](./docs/installation.md)
-- [用法](./docs/usage.md)
-- [指令](./docs/commands.md)
+- [安裝](./docs/01_installation.md)
+- [用法](./docs/02_usage.md)
+- [指令](./docs/03_commands.md)
 
 ## 授權
 
