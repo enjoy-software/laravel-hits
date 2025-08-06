@@ -1,7 +1,14 @@
 {
     "name": "enjoy-software/laravel-hits",
     "description": "Hit model for recording visitor information and tracking page views on various models",
-    "keywords": ["laravel", "hits", "analytics", "page-views", "visitor-tracking", "statistics"],
+    "keywords": [
+        "analytics",
+        "hits",
+        "laravel",
+        "page-views",
+        "statistics",
+        "visitor-tracking"
+    ],
     "homepage": "https://github.com/enjoy-software/laravel-hits",
     "type": "library",
     "license": "MIT",
