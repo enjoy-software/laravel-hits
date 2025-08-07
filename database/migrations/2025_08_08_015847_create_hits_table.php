@@ -13,18 +13,30 @@ return new class extends Migration
     {
         Schema::create('hits', function (Blueprint $table) {
             $table->comment('Table for tracking page views and visits');
+
             $table->id();
+
             $table->morphs('hittable');
-            $table->ipAddress('ip');
-            $table->text('user_agent');
+
+            $table->ipAddress('ip')->nullable()->comment('IP address of the visitor');
+
+            $table->text('user_agent')->nullable();
+
             $table->foreignId('user_id')
                 ->nullable()
                 ->constrained()
                 ->noActionOnDelete()
                 ->noActionOnUpdate();
+
             $table->string('referer', 500)->nullable()->comment('HTTP referer URL');
-            $table->string('method', 10)->default('GET')->comment('HTTP request method');
+
+            $table->string('method', 10)
+                ->nullable()
+                ->default('GET')
+                ->comment('HTTP request method');
+
             $table->text('url')->nullable()->comment('Full request URL');
+
             $table->timestamps();
 
             $table->index(['ip', 'created_at']);
