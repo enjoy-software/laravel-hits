@@ -13,7 +13,7 @@
 composer require enjoy-software/laravel-hits
 ```
 
-（可選）如果要客製化，可發布遷移檔案：
+發布遷移檔案：
 
 ```bash
 php artisan vendor:publish --tag=laravel-hits-migrations
@@ -27,7 +27,7 @@ php artisan migrate
 
 ## 配置選項
 
-如果要自訂配置選項，請發布配置檔案：
+（可選）發布配置檔案：
 
 ```bash
 php artisan vendor:publish --tag=laravel-hits-config
