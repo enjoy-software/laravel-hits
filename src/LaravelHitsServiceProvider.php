@@ -24,7 +24,7 @@ class LaravelHitsServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        AboutCommand::add('Laravel Hits', fn () => ['Version' => '1.0.0']);
+        AboutCommand::add('Laravel Hits', fn () => ['Version' => '1.1.1']);
 
         $this->publishes(
             [
