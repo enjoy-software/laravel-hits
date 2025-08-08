@@ -5,6 +5,7 @@ namespace EnjoySoftware\LaravelHits\Traits;
 use EnjoySoftware\LaravelHits\Contracts\HittableInterface;
 use EnjoySoftware\LaravelHits\Models\Hit;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Support\Facades\Auth;
@@ -34,6 +35,16 @@ trait Hittable
             'user_agent' => request()->header('User-Agent'),
             'user_id' => Auth::id(),
         ], $data));
+    }
+
+    /**
+     * Get hits count.
+     */
+    protected function hitsCount(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->getHitsCount(),
+        );
     }
 
     /**

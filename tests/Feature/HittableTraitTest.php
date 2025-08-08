@@ -152,4 +152,25 @@ class HittableTraitTest extends TestCase
         // Verify only one hit was recorded
         $this->assertEquals(1, $model->getHitsCount());
     }
+
+    public function test_hits_count_attribute_is_computed_dynamically()
+    {
+        $model = TestModel::create(['title' => 'Test Model']);
+
+        // Initially should be 0
+        $this->assertEquals(0, $model->hits_count);
+
+        // Record a hit
+        $model->recordHit(['ip' => '192.168.1.1']);
+
+        // The attribute should immediately reflect the new count
+        // (without needing to refresh the model)
+        $this->assertEquals(1, $model->hits_count);
+
+        // Record another hit
+        $model->recordHit(['ip' => '192.168.1.2']);
+
+        // Should now be 2
+        $this->assertEquals(2, $model->hits_count);
+    }
 }

@@ -58,6 +58,9 @@ $post->recordHit([
 // 總瀏覽次數
 $totalHits = $post->getHitsCount();
 
+// 總瀏覽次數，使用 hits_count 屬性
+$totalHits = $post->hits_count;
+
 // 唯一訪客數
 $uniqueHits = $post->getUniqueVisitorsCount();
 
