@@ -16,6 +16,7 @@
 - [安裝](./docs/01_installation.md)
 - [用法](./docs/02_usage.md)
 - [指令](./docs/03_commands.md)
+- [開發人員手冊](./docs/04_development.md)
 
 ## 授權
 
