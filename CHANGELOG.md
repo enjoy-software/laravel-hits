@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/lang/zh-TW/
 
 ## [Unreleased]
 
+## [1.2.2] - 2025-09-05
+
+### Added
+
+- 新增機器人名單
+- 新增開發者文件
+
 ## [1.2.1] - 2025-08-09
 
 ### Added
