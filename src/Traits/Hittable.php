@@ -65,6 +65,7 @@ trait Hittable
                 'crawler',
                 'facebookexternalhit',
                 'googlebot',
+                'googleother',
                 'linkedinbot',
                 'scraper',
                 'slackbot',

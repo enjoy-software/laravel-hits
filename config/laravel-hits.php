@@ -27,6 +27,7 @@ return [
         'crawler',
         'facebookexternalhit',
         'googlebot',
+        'googleother',
         'linkedinbot',
         'scraper',
         'slackbot',
