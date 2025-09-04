@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/lang/zh-TW/
 
 ## [Unreleased]
 
+## [1.2.4] - 2025-09-05
+
+- 更新安裝說明文件
+- 更新開發者文件
+
 ## [1.2.3] - 2025-09-05
 
 ### Changed
