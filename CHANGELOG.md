@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/lang/zh-TW/
 
 ## [1.2.4] - 2025-09-05
 
+### Changed
+
 - 更新安裝說明文件
 - 更新開發者文件
 
