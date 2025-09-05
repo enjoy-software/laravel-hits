@@ -32,9 +32,3 @@ php artisan migrate
 ```bash
 php artisan vendor:publish --tag=laravel-hits-config
 ```
-
-## 更新
-
-```bash
-composer update enjoy-software/laravel-hits
-```
